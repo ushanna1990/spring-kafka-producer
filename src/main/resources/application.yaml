@@ -1,0 +1,31 @@
+server:
+  port: 8083
+
+spring:
+  application:
+    name: spring-kafka-producer
+
+  # Kafka Configuration
+  kafka:
+    bootstrap-servers: localhost:9092       #Kafka localhost
+    producer:
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+
+#Eureka Client Configuration
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+    register-with-eureka: true
+    fetch-registry: true
+
+# Service URLs
+application:
+  order:
+    service:
+      url: http://localhost:8086/order
+  payment:
+    service:
+        url: http://localhost:8088/payment
+
