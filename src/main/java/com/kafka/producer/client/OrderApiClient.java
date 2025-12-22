@@ -1,6 +1,6 @@
 package com.kafka.producer.client;
 
-import com.kafka.producer.model.OrderResponse;
+import com.kafka.producer.model.Order;
 import org.springframework.web.service.annotation.GetExchange;
 import org.springframework.web.service.annotation.HttpExchange;
 
@@ -10,6 +10,6 @@ import java.util.List;
 public interface OrderApiClient {
 
     @GetExchange("/viewAllOrders")
-    List<OrderResponse> viewAllOrders();
+    List<Order> viewAllOrders();
 
 }

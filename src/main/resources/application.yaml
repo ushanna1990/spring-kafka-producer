@@ -1,5 +1,5 @@
 server:
-  port: 8083
+  port: 8084
 
 spring:
   application:
@@ -7,10 +7,10 @@ spring:
 
   # Kafka Configuration
   kafka:
-    bootstrap-servers: localhost:9092       #Kafka localhost
+    bootstrap-servers: localhost:9092       #Kafka server localhost
     producer:
       key-serializer: org.apache.kafka.common.serialization.StringSerializer
-      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer
 
 #Eureka Client Configuration
 eureka:
