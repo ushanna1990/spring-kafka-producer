@@ -1,6 +1,6 @@
 package com.kafka.producer.client;
 
-import com.kafka.producer.model.PaymentResponse;
+import com.kafka.producer.model.Payment;
 import org.springframework.web.service.annotation.GetExchange;
 import org.springframework.web.service.annotation.HttpExchange;
 
@@ -10,6 +10,6 @@ import java.util.List;
 public interface PaymentApiClient {
 
     @GetExchange("/viewAllPayments")
-    List<PaymentResponse> viewAllPayments();
+    List<Payment> viewAllPayments();
 
 }

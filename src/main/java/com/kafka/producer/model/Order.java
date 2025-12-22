@@ -1,6 +1,6 @@
 package com.kafka.producer.model;
 
-public class OrderResponse {
+public class Order {
 
     private String productId;
     private int quantity;
@@ -34,6 +34,7 @@ public class OrderResponse {
     public String getProductName() {
         return productName;
     }
+
     public void setProductName(String productName) {
         this.productName = productName;
     }

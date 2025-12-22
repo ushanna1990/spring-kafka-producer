@@ -1,14 +1,14 @@
 package com.kafka.producer.model;
 
-public class PaymentResponse {
+public class Payment {
     private Double amount;
     private String paymentStatus;
     private Long transactionId;
 
-    // Getters and Setters
     public Double getAmount() {
         return amount;
     }
+
     public void setAmount(Double amount) {
         this.amount = amount;
     }
